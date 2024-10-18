@@ -1,15 +1,17 @@
-import About from "./component/About";
-import Contact from "./component/Contacts";
-import Header from "./component/Header";
-import Projects from "./component/Projects";
+import { useState } from 'react'
+import Portfolio, { Home } from './component/Home'
+import { About } from './component/About'
+import { Projects } from './component/Projects'
+import { Skills } from './component/Skills'
+import { Blog } from './component/Blog'
+import { Navigation } from './component/Navigation'
 
+export default function App() {
+ 
 
-function App() {
   return (
-    <div className="App">
-      <Contact/>
+    <div>
+      <Portfolio/>
     </div>
-  );
+  )
 }
-
-export default App;
